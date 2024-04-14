@@ -6,3 +6,6 @@ build:
 
 install:
 	@go install
+	@go get ./...
+	@go mod tidy
+	@go mod download
