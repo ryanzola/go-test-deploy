@@ -8,7 +8,7 @@ RUN make install
 RUN make build
 
 FROM scratch
-COPY --from=builder /bin/tester /bin/tester
+COPY --from=builder /tester /bin/tester
 
 EXPOSE 3001
-ENTRYPOINT [ "./bin/tester" ]
+ENTRYPOINT [ "./tester" ]
