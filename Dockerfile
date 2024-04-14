@@ -10,5 +10,5 @@ RUN make build
 FROM scratch
 COPY --from=builder /test-app /test-app
 
-EXPOSE 3000
+EXPOSE 3001
 ENTRYPOINT [ "./test-app" ]
